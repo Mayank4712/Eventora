@@ -1,0 +1,15 @@
+# Use this workspace to collaborate
+workspace:
+  id: 0d16630d-6761-40f5-83ca-200ad1faa5a9
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  collections:
+    ../postman/collections/Eventora APIs: bf746d13-f9bb-4f7f-92c1-707475d77c43
+
+# All resources in the `postman/` folder are automatically registered in Local View.
+# Point to additional files outside the `postman/` folder to register them individually. Example:
+#localResources:
+#  collections:
+#    - ../tests/E2E Test Collection/

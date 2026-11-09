@@ -1,0 +1,12 @@
+name: Eventora Local Environment
+values:
+  - key: baseUrl
+    value: 'http://localhost:5000'
+  - key: token
+    value: ''
+  - key: event_id
+    value: ''
+  - key: free_event_id
+    value: ''
+  - key: booking_id
+    value: ''

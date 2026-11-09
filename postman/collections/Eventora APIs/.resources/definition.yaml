@@ -1,0 +1,8 @@
+$kind: collection
+description: ""
+variables:
+  baseUrl: http://localhost:5000
+  token: ""
+  event_id: ""
+  free_event_id: ""
+  booking_id: ""

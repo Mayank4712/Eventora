@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost:5000/api/bookings/my
+method: GET
+headers:
+  Authorization: Bearer {{token}}
+scripts:
+  - type: afterResponse
+    code: |-
+      const responseData = pm.response.json();
+      if (Array.isArray(responseData) && responseData.length > 0 && responseData[0]._id) {
+          pm.environment.set("booking_id", responseData[0]._id);
+          pm.collectionVariables.set("booking_id", responseData[0]._id);
+      }
+    language: text/javascript
+order: 4000
